@@ -15,6 +15,8 @@ namespace _20210914
             elsofeladat();
             masodikfeladat();
             harmadikfeladat();
+            negyedikfeladat();
+            otodikfeladat();
         }
         static void elsofeladat() {
 
@@ -25,13 +27,14 @@ namespace _20210914
         {
             Console.WriteLine("hogy hivnak");
             string nev = Console.ReadLine();
-            Console.WriteLine("szia ", nev); 
+            Console.WriteLine("szia {0}", nev); 
         }
         static void harmadikfeladat()
         {
             Console.WriteLine("irj egy szamot");
             int szam = Console.Read();
-            Console.WriteLine("a szam ketszerese: ", szam * 2);
+            Console.WriteLine("a szam ketszerese: {0}", szam * 2);
+
         }
         static void negyedikfeladat()
         {
@@ -39,20 +42,18 @@ namespace _20210914
             Console.WriteLine("irj meg egy szamot");
             int szam1 = Console.Read();
             int szam2 = Console.Read();
-            Console.WriteLine("a ket szam osszegge: ", szam1 + szam2);
-            Console.WriteLine("a ket szam kulonbsege: ", szam1 - szam2);
-            Console.WriteLine("a ket szam szorzata: ", szam1 * szam2);
-            Console.WriteLine("a ket szam osszegge: ", szam1 / szam2);
-            Console.WriteLine("a ket szam osszegge: ", szam1 % szam2);
+            Console.WriteLine("a ket szam osszegge: {0} ", szam1 + szam2);
+            Console.WriteLine("a ket szam kulonbsege: {0}", szam1 - szam2);
+            Console.WriteLine("a ket szam szorzata: {0}", szam1 * szam2);
+            Console.WriteLine("a ket szam osszegge: {0}", szam1 / szam2);
+            Console.WriteLine("a ket szam osszegge: {0}", szam1 % szam2);
         }
         static void otodikfeladat()
         {
             Console.WriteLine("negyzet A oldala");
-            Console.WriteLine("negyzet B oldala");
             int A = Console.Read();
-            int B = Console.Read();
-            Console.WriteLine("A szam negyzete: ", A * B);
-            Console.WriteLine();
+            Console.WriteLine("A szam negyzete: {0}", A * A);
+            Console.WriteLine("A szam kerulete: {0}", A + A);
         }
     }
 }
