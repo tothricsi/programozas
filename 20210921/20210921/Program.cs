@@ -13,10 +13,18 @@ namespace _20210921
         {
             elsofeladat();
             masodikfeladat();
+            harmadikfeladat();
+            negyedikfeladat();
+            otodikfeladat();
+            hatodikfeladat(); 
+            hetedikfeladat();
+            nyolcadikfeladat();
+            kilencedikfeladat();
+            tizedikfeladat();
+            tizenegyfeladat();
 
-            
             }
-                static void elsofeladat()
+        static void elsofeladat()
         {
             Console.WriteLine("kerek egy szamot:");
             int szam = int.Parse( Console.ReadLine());
@@ -30,7 +38,7 @@ namespace _20210921
             }
             Console.ReadLine();
         }
-                static void masodikfeladat()
+        static void masodikfeladat()
             {
             Console.WriteLine("kerek egy szamot:");
             int a = int.Parse(Console.ReadLine());
@@ -73,10 +81,103 @@ namespace _20210921
         {
             Console.WriteLine("kerek egy szamot:");
             int szamok = int.Parse(Console.ReadLine());
-            if (szamok<)
+            if (szamok<16)
             {
-
+                Console.WriteLine(szamok * 10  ); 
+            }
+            else
+            {
+                Console.WriteLine(szamok/3);
             }
         }
+        static void hatodikfeladat()
+        {
+            Console.WriteLine("kerek egy szamot 10 es 50 kozott");
+            int alma = int.Parse(Console.ReadLine());
+            int ujszam = 0;
+            ujszam = alma / 10;
+            if(ujszam == 1)
+            {
+                Console.WriteLine("tizes");
+            }
+            else if (ujszam == 2)
+            {
+                Console.WriteLine("huszas");
+            }
+            else if (ujszam == 3)
+            {
+                Console.WriteLine("harmas");
+            }
+            else if (ujszam == 4)
+            {
+                Console.WriteLine("negyes");
+            }
+            else if (ujszam == 5)
+            {
+                Console.WriteLine("otos");
+            }
+            Console.ReadLine();
+        }
+        static void hetedikfeladat()
+        {
+            Console.WriteLine("kerek egy szamot");
+            int bela = int.Parse(Console.ReadLine());
+            if (12 < bela || bela< 25 && bela%2==0)
+            {
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("nem pozitiv");
+            }
+            Console.ReadLine();
+        }
+        static void nyolcadikfeladat()
+        {
+            Console.WriteLine("kerek egy homersekletet");
+            int kecskebelbolkeszultrantotthus = int.Parse(Console.ReadLine());
+            if (kecskebelbolkeszultrantotthus < 0)
+            {
+                Console.WriteLine("halmazallapot: szilard");
+            }
+            else
+            {
+                Console.WriteLine("hamazallapot: folyadek");
+            }
+        }
+        static void kilencedikfeladat()
+        {
+            Console.WriteLine("kerek egy szamot");
+            int migraante = int.Parse(Console.ReadLine());
+            if (migraante%3==0)
+            {
+                Console.WriteLine("oszthato 3 al");
+            }
+            else if (migraante%4==0)
+            {
+                Console.WriteLine("oszthato 4 el");
+            }
+            else
+            {
+                Console.WriteLine("oszthato 9 el");
+            }
+        }
+        static void tizedikfeladat()
+        {
+            Console.WriteLine("kerek egy szamot");
+            int h = int.Parse(Console.ReadLine());
+            if (h%4==0)
+            {
+                Console.WriteLine("szokoev");
+            }
+        }
+        static void tizenegyfeladat()
+        {
+            Console.WriteLine("kerek 3 szamot");
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+        }
+    
     }
 }
