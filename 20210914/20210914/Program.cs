@@ -17,8 +17,13 @@ namespace _20210914
             harmadikfeladat();
             negyedikfeladat();
             otodikfeladat();
+            hatodikfeladat();
+            hetedikfeladat();
+            nyolcadikfeladat();
+            kilencedikfeladat();
         }
-        static void elsofeladat() {
+        static void elsofeladat()
+        {
 
             Console.WriteLine("Hello World!");
             Console.ReadLine();
@@ -27,7 +32,7 @@ namespace _20210914
         {
             Console.WriteLine("hogy hivnak");
             string nev = Console.ReadLine();
-            Console.WriteLine("szia {0}", nev); 
+            Console.WriteLine("szia {0}", nev);
         }
         static void harmadikfeladat()
         {
@@ -55,5 +60,74 @@ namespace _20210914
             Console.WriteLine("A szam negyzete: {0}", A * A);
             Console.WriteLine("A szam kerulete: {0}", A + A);
         }
+        static void hatodikfeladat()
+        {
+            Console.WriteLine("kerem a teglalap 2 oldalat:");
+            int a, b = Console.ReadLine();
+            Console.WriteLine("A teglalap terulete: {0},{1}", a * b);
+            Console.WriteLine("A teglalap kerulete: {0},{1}", a + a + b + b);
+        }
+        static void hetedikfeladat()
+        {
+            Console.WriteLine("add meg az elso egesz szamot");
+            int a = Console.ReadLine();
+            Console.WriteLine("add meg a masodik egesz szamot");
+            int b = Console.ReadLine();
+            if (a > b)
+            {
+                Console.WriteLine("a szam a {0} nagyobb mint b {1}", a, b);
+            }
+            else
+            {
+                Console.WriteLine("a szam b {0} nagyobb mint a {1}", b, a);
+            }
+        }
+        static void nyolcadikfeladat()
+        {
+            Console.WriteLine("add meg az elso egesz szamot");
+            int a = Console.ReadLine();
+            Console.WriteLine("add meg a masodik egesz szamot");
+            int b = Console.ReadLine();
+            Console.WriteLine("add meg a harmadik egesz szamot");
+            int c = Console.ReadLine();
+            if (a < b & a < c)
+            {
+                Console.WriteLine("a szam a {0} kissebb mint b {1} es kissebb min c {2}", a, b, c);
+            }
+            if (b < a & b < c)
+            {
+                Console.WriteLine("a szam a {0} nagyobb mint b {1} es kissebb min c {2}", a, b, c);
+            }
+            else (c < a & c < b);
+            {
+                Console.WriteLine("a szam a {0} nagyobb mint b {1} es kissebb min c {2}", a, b, c);
+            }
+        }
+        static void kilencedikfeladat()
+        {
+            Console.WriteLine("add meg az elso szamot");
+            int a = Console.ReadLine();
+            Console.WriteLine("add meg a masodik szamot");
+            int b = Console.ReadLine();
+            Console.WriteLine("add meg a harmadik szamot");
+            int c = Console.ReadLine();
+            if (a + b < c)
+            {
+                Console.WriteLine("a haromszog nem megvalosithato");
+            }
+            if (a + c < b)
+            {
+                Console.WriteLine("a haromszog nem megvalosithato");
+            }
+            else (b + c < a);
+            {
+                Console.WriteLine("a haromszog nem megvalosithato");
+            }
+        }
+        static void tizedikfeladat()
+        {
+        }
     }
 }
+    
+
